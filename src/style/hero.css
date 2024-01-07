@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.upper {
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  opacity: 9;
+  
+  
+}
+
+
+.upper .content {
+	
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #18512c;
+  position:relative;
+  text-align: center;
+ 
+  
+}
+
+.upper .content h2 {
+ 
+  font-size: 6rem;
+  max-width: 600px;
+  line-height: 70px;
+  font-family: math;
+ 
+ 
+  
+}
+
+.upper .content p {
+  font-weight: 600;
+  max-width: 600px;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #ac5527;
+  
+  
+}
+
+.upper .content button {
+  background: #dbd2d2;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.upper .content button:hover {
+  color: #fff;
+  background: #C06B3E;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .upper .content {
+    text-align: center;
+  }
+
+  .upper .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .upper .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .upper .content button {
+    padding: 9px 18px;
+  }
+}

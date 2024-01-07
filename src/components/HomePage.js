@@ -5,13 +5,14 @@ import "../style/home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import NavBar from "./NavBar";
-import HeroSection from "./HeroSection";
+//import HeroSection from "./HeroSection";
 import bag from "../images/bag.svg";
 import support from "../images/support.svg";
 import truck from "../images/truck.svg";
 import re_turn from "../images/re_turn.svg";
 import why_choose_us from "../images/why_choose_us.jpg";
 import Footer from './Footer';
+import home2 from "../images/home2.jpg";
 
 function HomePage() {
 	const [formData, setFormData] = useState({
@@ -58,7 +59,22 @@ function HomePage() {
   return (
     <div>
        <NavBar/> 
-       <HeroSection/>
+     <div className='body'>
+	  <div className="h_upper" style={{backgroundImage:`url(${home2})` }}>
+    <section className="h_upper">
+      
+      <div className="content">
+      
+        <h2>FURNITURE LAND</h2>
+        <p>
+          Your Space, Your Story, Our Furnitures.
+        </p>
+        <button>Sign in</button>
+      </div>
+     </section> 
+ </div>
+
+
     <div className="App">
     <div className="container">
       <div className="product-card">
@@ -171,7 +187,7 @@ function HomePage() {
 
 					<div class="col-lg-5">
 						<div class="img-wrap">
-							<img src={why_choose_us} alt="Image" class="img-fluid"/>
+							<img src={why_choose_us} alt="Image" class="img-home-fluid"/>
 						</div>
 					</div>
 
@@ -179,69 +195,10 @@ function HomePage() {
 			</div>
 		</div>
 
-{/* Start Form */}
-  
-      <section className='contact_fe' id='contact_fe'>
-        <h2 className='heading_fe'>Furniture <span>Details</span></h2>
-        <form className='form-e' encType="multipart/form-data" onSubmit={handleSubmit}>
-          <div className='input-box_fe'>
-            <p className='p-e'>Furniture Name<span>*</span></p>
-            <input
-              type="text"
-              name="project_name"
-              placeholder="Enter your furniture name"
-              value={formData.project_name}
-              onChange={handleChange}
-            />
-          </div>
-          <div className='input-box_fe'>
-            <label>Furniture Type<span>*</span></label>
-            <select
-              name='project_type'
-              required
-              className='input'
-              value={formData.project_type}
-              onChange={handleChange}
-            >
-              <option value="Engineer">Bedroom</option>
-              <option value="QA">Living Room</option>
-              <option value="Archi">Accessories</option>
-            </select>
-          </div>
-          <div className='input-box_fe'>
-            <p className='p-e'>Furniture Description<span>*</span></p>
-            <textarea
-              name="project_description"
-              cols={30}
-              rows={10}
-              placeholder="Write Some Details about your Furniture"
-              value={formData.project_description}
-              onChange={handleChange}
-            />
-          </div>
-          <div className='input-box_fe'>
-            <p className='p-e'>Image <span>*</span></p>
-            <input
-              type="file"
-              name="image_1"
-              onChange={handleChange}
-            />
-          </div>
-          <input
-            type='submit'
-            value='Submit Details'
-            name="submit"
-            className='btn_fe'
-            onClick={handleSubmit}
-          />
-        </form>
-      </section>
-{/*End form */}
-
 
 <Footer/>
     </div>
-
+	</div>
   );
 }
 export default HomePage;

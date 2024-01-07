@@ -149,21 +149,12 @@ a
     padding: 300px; }
     .why-choose-section .img-wrap {
       position: relative;
-    padding: 10px; }
-      .why-choose-section .img-wrap:before {
-        position: absolute;
-        content: "";
-        width: 255px;
-        height: 200px;
-        background-image: url("../images/dots-green.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        -webkit-transform: translate(-40%, -40%);
-        -ms-transform: translate(-40%, -40%);
-        transform: translate(-40%, -40%);
-        z-index: -1; }
+      padding: 10px; }
+      
       .why-choose-section .img-wrap img {
-        border-radius: 20px; }
+        border-radius: 20px;
+         }
+         
   
   .feature {
     margin-bottom: 30px; }
@@ -191,120 +182,101 @@ a
 
 
       
-/*form css*/
+/*hero section*/
 
-:root{
-    --bg-color :#f0f6e2;
-    --second-bg-color: #86efdf;
-    --text-color:#15300f;
-    --main-color:rgb(7, 131, 119);
 
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  
 }
-h2.heading_fe{
+
+.h_upper {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  
+  
+}
+
+
+.h_upper .content {
+	
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #bdeaaa;
+  position:relative;
+  text-align: center;
+ 
+  
+}
+
+.h_upper .content h2 {
+ 
+  font-size: 6rem;
+  max-width: 600px;
+  line-height: 70px;
+  font-family: math;
+  color: #bdeaaa;
+ 
+ 
+  
+}
+
+.h_upper .content p {
+  font-weight: 600;
+  max-width: 600px;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: rgb(238, 236, 191);
+  
+}
+
+.h_upper .content button {
+  background: #dbd2d2;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.h_upper .content button:hover {
+  color: #fff;
+  background: #C06B3E;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .h_upper .content {
     text-align: center;
-    font-size: 4.5rem;  
- }
-h2.heading_fe{
-        
-        font-size: 3rem; 
-}
+  }
 
-.form-e {
-    background-color: rgba(107, 124, 143, 0.5);
-    padding: 2rem;
-    box-shadow: var(--box-shodow);
-    
-}
-.p-e{
-font-weight: 600;
-color: #211f1f;
-}
+  .h_upper .content :is(h2, p) {
+    max-width: 100%;
+  }
 
-/* ---contact ---- */
-.contact_fe span{
-    color:var(--main-color);
- }
-
- .contact_fe h2{
- margin-bottom: 3rem;
- }
-.contact_fe{
-    background-color: var(--bg-color); 
-}
-
-
-.contact_fe form{
-    max-width: 30rem;
-    max-height: 50rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 100px;
-    
-}
-
-.contact_fe form .input-box_fe{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.contact_fe form .input-box_fe input,
-.contact_fe form textarea{
-    width: 100%;
-    padding: 0.8rem;
-    font-size: 1rem;
-    color:var(--text-color);
-    background-color: rgba(218, 222, 243, 0.61);
-    border-radius: .5rem;
-    margin: .9rem 0;
-
-}
-
-
-.contact_fe form textarea{
-    resize :none;
-
-}
-.btn_fe{
-    margin-top: 1rem;
-    padding: 1rem 3rem;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    background: rgb(160, 111, 83);
-    border-radius: .4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
-    height: 50px;
-    width: 100%;
-    
-    
-}
-
-
-.btn_fe:hover{
-    box-shadow: none;
-    background: rgb(7, 125, 60);
-    color: black;
-    font-weight: 700;
-}
-.input-box_fe lable{	
-	font-size: 15px;
-	font-weight: bold;
-	color: #000;
-}
-.input{
-	 width: 100%;
-    padding: 0.8rem;
-    font-size: 1rem;
-    color:var(--text-color);
-    background-color: rgba(218, 222, 243, 0.61);
-    border-radius: .5rem;
-    margin: .9rem 0;
+  .h_upper .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .h_upper .content button {
+    padding: 9px 18px;
+  }
 }
