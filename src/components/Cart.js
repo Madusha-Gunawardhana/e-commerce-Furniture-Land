@@ -1,5 +1,8 @@
-import "../style/cart.css";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 import React from "react";
+import "../style/hero.css";
+import home2 from "../images/home5.jpg";
 import {
   MDBBtn,
   MDBCard,
@@ -12,236 +15,168 @@ import {
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import HeroSection from "./HeroSection";
 
 export default function Cart() {
-  return (
-    <div>
-      <NavBar/>
-    <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
-      <MDBContainer className="h-100 py-5">
-        <MDBRow className="justify-content-center align-items-center h-100">
-          <MDBCol>
-            <MDBCard className="shopping-cart" style={{ borderRadius: "15px" }}>
-              <MDBCardBody className="text-black">
-                <MDBRow>
-                  <MDBCol lg="7" className="px-5 py-4">
-                    <MDBTypography
-                      tag="h3"
-                      className="mb-5 pt-2 text-center fw-bold text-uppercase"
-                    >
-                      Your products
-                    </MDBTypography>
+return (
+  <div>
+    <NavBar/>
+    <div className="upper" style={{backgroundImage:`url(${home2})` }}>
+    <section className="upper">
+      
+      <div className="content">
+      
+        <h2>FURNITURE LAND</h2>
+        <p>
+          Your Space, Your Story, Our Furnitures.
+        </p>
+        <button>Sign in</button>
+      </div>
+     </section> 
+ </div>
+<section className="h-100" style={{ backgroundColor: "#eee" }}>
+  <MDBContainer className="py-5 h-100">
+    <MDBRow className="justify-content-center align-items-center h-100">
+      <MDBCol md="10">
+        <div className="d-flex justify-content-between align-items-center mb-4">
+          
+          <div>
+            <p className="mb-0">
+              <span className="text-muted">Sort by:</span>
+              <a href="#!" className="text-body">
+                price <i className="fas fa-angle-down mt-1"></i>
+              </a>
+            </p>
+          </div>
+        </div>
 
-                    <div className="d-flex align-items-center mb-5">
-                      <div className="flex-shrink-0">
-                        <MDBCardImage
-                          src="https://www.ranjanlanka.lk/src/item/45136729725.png"
-                          fluid
-                          style={{ width: "150px" }}
-                          alt="Generic placeholder image"
-                        />
-                      </div>
+        <MDBCard className="rounded-3 mb-4">
+          <MDBCardBody className="p-4">
+            <MDBRow className="justify-content-between align-items-center">
+              <MDBCol md="2" lg="2" xl="2">
+                <MDBCardImage className="rounded-3" fluid
+                  src="https://www.ranjanlanka.lk/src/item/45136729725.png"
+                  alt="Cotton T-shirt" />
+              </MDBCol>
+              <MDBCol md="3" lg="3" xl="3">
+                <p className="lead fw-normal mb-2">Sofa Set</p>
+                <p>
+                  <span className="text-muted">Type : Living Room </span>
+                 
+                </p>
+              </MDBCol>
+              <MDBCol md="3" lg="3" xl="2"
+                className="d-flex align-items-center justify-content-around">
+                <MDBBtn color="link" className="px-2">
+                  <MDBIcon fas icon="minus" />
+                </MDBBtn>
 
-                      <div className="flex-grow-1 ms-3">
-                        <a href="#!" className="float-end text-black">
-                          <MDBIcon fas icon="times" />
-                        </a>
-                        <MDBTypography tag="h5" className="text-primary">
-                          Sofa Set
-                        </MDBTypography>
-                        <MDBTypography tag="h6" style={{ color: "#9e9e9e" }}>
-                          Type : Living Room
-                        </MDBTypography>
+                <MDBInput min={0} defaultValue={2} type="number" size="sm" />
 
-                        <div className="d-flex align-items-center">
-                          <p className="fw-bold mb-0 me-5 pe-3">Rs. 100,540</p>
+                <MDBBtn color="link" className="px-2">
+                  <MDBIcon fas icon="plus" />
+                </MDBBtn>
+              </MDBCol>
+              <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
+                <MDBTypography tag="h5" className="mb-0">
+                  $499.00
+                </MDBTypography>
+              </MDBCol>
+              <MDBCol md="1" lg="1" xl="1" className="text-end">
+                <a href="#!" className="text-danger">
+                  <MDBIcon fas icon="trash text-danger" size="lg" />
+                </a>
+              </MDBCol>
+            </MDBRow>
+          </MDBCardBody>
+        </MDBCard>
+          <MDBCard className="rounded-3 mb-4">
+          <MDBCardBody className="p-4">
+            <MDBRow className="justify-content-between align-items-center">
+              <MDBCol md="2" lg="2" xl="2">
+                <MDBCardImage className="rounded-3" fluid
+                  src="https://www.laura-james.co.uk/cdn/shop/files/Cavill_Grey_Bed_Beee_1250x.png?v=1682573324"
+                  alt="Cotton T-shirt" />
+              </MDBCol>
+              <MDBCol md="3" lg="3" xl="3">
+                <p className="lead fw-normal mb-2">Allysin Bed</p>
+                <p>
+                  <span className="text-muted">Type: Bed Room</span>
+               
+                </p>
+              </MDBCol>
+              <MDBCol md="3" lg="3" xl="2"
+                className="d-flex align-items-center justify-content-around">
+                <MDBBtn color="link" className="px-2">
+                  <MDBIcon fas icon="minus" />
+                </MDBBtn>
 
-                          <div className="def-number-input number-input safari_only">
-                            <button className="minus"></button>
-                            <input
-                              className="quantity fw-bold text-black"
-                              min={0}
-                              defaultValue={1}
-                              type="number"
-                            />
-                            <button className="plus"></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <MDBInput min={0} defaultValue={2} type="number" size="sm" />
 
-                    <div className="d-flex align-items-center mb-5">
-                      <div className="flex-shrink-0">
-                        <MDBCardImage
-                          src="https://www.laura-james.co.uk/cdn/shop/files/Cavill_Grey_Bed_Beee_1250x.png?v=1682573324"
-                          fluid
-                          style={{ width: "150px" }}
-                          alt="Generic placeholder image"
-                        />
-                      </div>
+                <MDBBtn color="link" className="px-2">
+                  <MDBIcon fas icon="plus" />
+                </MDBBtn>
+              </MDBCol>
+              <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
+                <MDBTypography tag="h5" className="mb-0">
+                Rs.107,000
+                </MDBTypography>
+              </MDBCol>
+              <MDBCol md="1" lg="1" xl="1" className="text-end">
+                <a href="#!" className="text-danger">
+                  <MDBIcon fas icon="trash text-danger" size="lg" />
+                </a>
+              </MDBCol>
+            </MDBRow>
+          </MDBCardBody>
+        </MDBCard>
 
-                      <div className="flex-grow-1 ms-3">
-                        <a href="#!" className="float-end text-black">
-                          <MDBIcon fas icon="times" />
-                        </a>
-                        <MDBTypography tag="h5" className="text-primary">
-                         Allysin Bed
-                        </MDBTypography>
-                        <MDBTypography tag="h6" style={{ color: "#9e9e9e" }}>
-                          Type: Bed Room
-                        </MDBTypography>
+        <MDBCard className="rounded-3 mb-4">
+          <MDBCardBody className="p-4">
+            <MDBRow className="justify-content-between align-items-center">
+              <MDBCol md="2" lg="2" xl="2">
+                <MDBCardImage className="rounded-3" fluid
+                  src="https://damro.lk/wp-content/uploads/2021/02/DMC12C-1.jpg"
+                  alt="Cotton T-shirt" />
+              </MDBCol>
+              <MDBCol md="3" lg="3" xl="3">
+                <p className="lead fw-normal mb-2">Plastic Cupboard</p>
+                <p>
+                  <span className="text-muted">Type: Accessories </span>
+                </p>
+              </MDBCol>
+              <MDBCol md="3" lg="3" xl="2"
+                className="d-flex align-items-center justify-content-around">
+                <MDBBtn color="link" className="px-2">
+                  <MDBIcon fas icon="minus" />
+                </MDBBtn>
 
-                        <div className="d-flex align-items-center">
-                          <p className="fw-bold mb-0 me-5 pe-3">Rs.107,000</p>
+                <MDBInput min={0} defaultValue={2} type="number" size="sm" />
 
-                          <div className="def-number-input number-input safari_only">
-                            <button className="minus"></button>
-                            <input
-                              className="quantity fw-bold text-black"
-                              min={0}
-                              defaultValue={1}
-                              type="number"
-                            />
-                            <button className="plus"></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="d-flex align-items-center mb-5">
-                      <div className="flex-shrink-0">
-                        <MDBCardImage
-                          src="https://damro.lk/wp-content/uploads/2021/02/DMC12C-1.jpg"
-                          fluid
-                          style={{ width: "150px" }}
-                          alt="Generic placeholder image"
-                        />
-                      </div>
-
-                      <div className="flex-grow-1 ms-3">
-                        <a href="#!" className="float-end text-black">
-                          <MDBIcon fas icon="times" />
-                        </a>
-                        <MDBTypography tag="h5" className="text-primary">
-                          Plastic Cupboard
-                        </MDBTypography>
-                        <MDBTypography tag="h6" style={{ color: "#9e9e9e" }}>
-                          Type: Accessories
-                        </MDBTypography>
-
-                        <div className="d-flex align-items-center">
-                          <p className="fw-bold mb-0 me-5 pe-3">Rs.11,000</p>
-
-                          <div className="def-number-input number-input safari_only">
-                            <button className="minus"></button>
-                            <input
-                              className="quantity fw-bold text-black"
-                              min={0}
-                              defaultValue={2}
-                              type="number"
-                            />
-                            <button className="plus"></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr
-                      className="mb-4"
-                      style={{
-                        height: "2px",
-                        backgroundColor: "#1266f1",
-                        opacity: 1,
-                      }}
-                    />
-
-                    
-                    <div
-                      className="d-flex justify-content-between p-2 mb-2"
-                      style={{ backgroundColor: "#e1f5fe" }}
-                    >
-                      <MDBTypography tag="h5" className="fw-bold mb-0">
-                        Total:
-                      </MDBTypography>
-                      <MDBTypography tag="h5" className="fw-bold mb-0">
-                        Rs.229,540
-                      </MDBTypography>
-                    </div>
-                  </MDBCol>
-                  <MDBCol lg="5" className="px-5 py-4">
-                    <MDBTypography
-                      tag="h3"
-                      className="mb-5 pt-2 text-center fw-bold text-uppercase"
-                    >
-                      Payment
-                    </MDBTypography>
-
-                    <form className="mb-5">
-                      <MDBInput
-                        className="mb-5"
-                        label="Card number"
-                        type="text"
-                        size="lg"
-                        
-                      />
-
-                      <MDBInput
-                        className="mb-5"
-                        label="Name on card"
-                        type="text"
-                        size="lg"
-                       
-                      />
-
-                      <MDBRow>
-                        <MDBCol md="6" className="mb-5">
-                          <MDBInput
-                            className="mb-4"
-                            label="Expiration"
-                            type="text"
-                            size="lg"
-                            minLength="7"
-                            maxLength="7"
-                            placeholder="MM/YYYY"
-                          />
-                        </MDBCol>
-                        <MDBCol md="6" className="mb-5">
-                          <MDBInput
-                            className="mb-4"
-                            label="Cvv"
-                            type="text"
-                            size="lg"
-                            minLength="3"
-                            maxLength="3"
-                            placeholder="&#9679;&#9679;&#9679;"
-                            
-                          />
-                        </MDBCol>
-                      </MDBRow>
-
-                      <MDBTypography
-                        tag="h5"
-                        className="fw-bold mb-5"
-                        style={{ position: "absolute", bottom: "0" }}
-                      >
-                        <a href="#!">
-                          <MDBIcon fas icon="angle-left me-2" />
-                          Check out
-                        </a>
-                      </MDBTypography>
-                    </form>
-                  </MDBCol>
-                </MDBRow>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-    </section>
-    <Footer/>
-    </div>
-  );
+                <MDBBtn color="link" className="px-2">
+                  <MDBIcon fas icon="plus" />
+                </MDBBtn>
+              </MDBCol>
+              <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
+                <MDBTypography tag="h5" className="mb-0">
+                Rs.11,000
+                </MDBTypography>
+              </MDBCol>
+              <MDBCol md="1" lg="1" xl="1" className="text-end">
+                <a href="#!" className="text-danger">
+                  <MDBIcon fas icon="trash text-danger" size="lg" />
+                </a>
+              </MDBCol>
+            </MDBRow>
+          </MDBCardBody>
+        </MDBCard>
+        <div className="checout_btn">
+        <button>Check Out</button>
+        </div>
+      </MDBCol>
+    </MDBRow>
+  </MDBContainer>
+</section>
+<Footer/>
+</div>
+);
 }
