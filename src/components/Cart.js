@@ -169,6 +169,17 @@ return (
             </MDBRow>
           </MDBCardBody>
         </MDBCard>
+        <div
+                      className="d-flex justify-content-between p-2 mb-2"
+                      style={{ backgroundColor: "#e1f5fe" }}
+                    >
+                      <MDBTypography tag="h5" className="fw-bold mb-0">
+                        Total:
+                      </MDBTypography>
+                      <MDBTypography tag="h5" className="fw-bold mb-0">
+                        2261$
+                      </MDBTypography>
+                    </div>
         <div className="checout_btn">
         <button>Check Out</button>
         </div>
