@@ -14,6 +14,15 @@ import SignIn from './components/SignIn';
 import SellFurniture from './components/SellFurniture';
 import ContacUs from './components/ContactUs';
 import Checkout from './components/Checkout';
+import Dashboard from './components/adminPanel/Dashboard';
+import Login from './components/adminPanel/Login';
+import Portal from './components/adminPanel/Portal';
+import UserList from './components/adminPanel/UserList';
+import UserEdit from './components/adminPanel/UserEdit';
+import UserView from './components/adminPanel/UserView';
+import Usercreate from './components/adminPanel/Usercreate';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +38,14 @@ root.render(
       <Route path="contactus" element={<ContacUs/>} />
       <Route path="checkout" element={<Checkout/>} />
       <Route path="/" element={<HomePage/>} /> 
+
+      <Route path="adminDashboard" element={<Dashboard/>} /> 
+      <Route path="adminLogin" element={<Login/>} /> 
+      <Route path='/portal' element={<Portal/>}/>
+      <Route path='user-list' element={<UserList/>} />
+      <Route Route path='create-user' element={<Usercreate/>} />
+      <Route path='user-edit/:id' element={<UserEdit/>} />
+      <Route path='user-view/:id' element={<UserView/>} />
   </Routes>
 </BrowserRouter>
 );
