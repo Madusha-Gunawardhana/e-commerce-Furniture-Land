@@ -53,7 +53,7 @@ function NavBar() {
                 <a href='sellfurniture'>SELL Furniture</a>
               </li>
               <li>
-                <a href='aboutus'>ABOUT US</a>
+                <a href='about'>ABOUT US</a>
               </li>
               <li>
                 <a href='contactus'>CONTACT US</a>

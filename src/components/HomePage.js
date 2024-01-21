@@ -139,7 +139,7 @@ function HomePage() {
 				<div className="row justify-content-between">
 					<div className="col-lg-6">
 						<h2 className="section-title">Why Choose Us</h2>
-						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+						<p>Discover unmatched quality and style at our furniture store. Elevate your living space with handcrafted pieces that seamlessly blend sophistication and comfort.</p>
 
 						<div className="row my-5">
 							<div className="col-6 col-md-6">
@@ -148,7 +148,7 @@ function HomePage() {
 										<img src={truck} alt="Image" class="imf-fluid"/>
 									</div>
 									<h3>Fast &amp; Free Shipping</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Experience swift and complimentary delivery with our furniture store's fast and free shipping service. Elevate your space effortlessly with hassle-free shipping on all orders.</p>
 								</div>
 							</div>
 
@@ -158,7 +158,7 @@ function HomePage() {
 										<img src={bag} alt="Image" class="imf-fluid"/>
 									</div>
 									<h3>Easy to Shop</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Seamless Shopping: Discover the convenience of an effortless shopping experience at our furniture store.</p>
 								</div>
 							</div>
 
@@ -168,7 +168,7 @@ function HomePage() {
 										<img src={support} alt="Image" class="imf-fluid"/>
 									</div>
 									<h3>24/7 Support</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Our 24/7 support ensures you have expert guidance and assistance whenever you need it.</p>
 								</div>
 							</div>
 
@@ -178,7 +178,7 @@ function HomePage() {
 										<img src={re_turn} alt="Image" class="imf-fluid"/>
 									</div>
 									<h3>Hassle Free Returns</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<p>Enjoy hassle-free returns on your furniture purchases. Our customer-friendly return policy ensures your comfort and peace of mind.</p>
 								</div>
 							</div>
 

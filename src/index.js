@@ -21,6 +21,9 @@ import UserList from './components/adminPanel/UserList';
 import UserEdit from './components/adminPanel/UserEdit';
 import UserView from './components/adminPanel/UserView';
 import Usercreate from './components/adminPanel/Usercreate';
+import AboutUs from './components/AboutUs';
+
+
 
 
 
@@ -37,6 +40,7 @@ root.render(
       <Route path="signin" element={<SignIn/>} />
       <Route path="contactus" element={<ContacUs/>} />
       <Route path="checkout" element={<Checkout/>} />
+      <Route path="about" element={<AboutUs/>} />
       <Route path="/" element={<HomePage/>} /> 
 
       <Route path="adminDashboard" element={<Dashboard/>} /> 
